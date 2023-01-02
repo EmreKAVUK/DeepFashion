@@ -12,7 +12,7 @@ def pull_data(url,cname):
         link = image['data-original']
 
         try:
-            with open("C:\\Users\\pc\\Desktop\\DeepLearning_Project\\input\\clothes\\images\\"+cname+"\\"+name.replace(' ','-').replace('/','').lstrip()+'.jpg','wb') as f:
+            with open("C:\\Users\\emrek\\Desktop\\DeepLearning_Project_Updated2\\input\\clothes\\images\\"+cname+"\\"+name.replace(' ','-').replace('/','').lstrip()+'.jpg','wb') as f:
                 im = requests.get(link)
                 f.write(im.content)
         except:
